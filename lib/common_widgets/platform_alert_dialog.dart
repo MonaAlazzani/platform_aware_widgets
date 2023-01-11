@@ -78,8 +78,8 @@ class PlatformAlertDialogAction extends PlatformWidget {
   final VoidCallback onPressed;
 
   @override
-  FlatButton buildMaterialWidget(BuildContext context) {
-    return FlatButton(
+  TextButton buildMaterialWidget(BuildContext context) {
+    return TextButton(
       child: child,
       onPressed: onPressed,
     );

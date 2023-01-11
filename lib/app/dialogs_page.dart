@@ -12,7 +12,7 @@ class DialogsPage extends StatelessWidget {
     if (Platform.isIOS) {
       print('[Snackbar not supported] $text');
     } else {
-      final scaffold = Scaffold.of(context);
+      var scaffold = ScaffoldMessenger.of(context);
       scaffold.hideCurrentSnackBar();
       scaffold.showSnackBar(SnackBar(
         content: Text(text),

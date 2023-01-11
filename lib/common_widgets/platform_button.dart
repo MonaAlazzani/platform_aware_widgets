@@ -21,9 +21,9 @@ class PlatformButton extends PlatformWidget {
 
   @override
   Widget buildMaterialWidget(BuildContext context) {
-    return FlatButton(
+    return TextButton(
       child: child,
-      color: color,
+      style: TextButton.styleFrom(backgroundColor: color),
       onPressed: onPressed,
     );
   }

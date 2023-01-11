@@ -31,7 +31,7 @@ class _SwitchesPageState extends State<SwitchesPage> {
       appBar: AppBar(
         title: Text('Material AppBar'),
         actions: [
-          FlatButton(
+          TextButton(
             child: Text(
               'About',
               style: TextStyle(
